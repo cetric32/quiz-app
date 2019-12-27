@@ -7,10 +7,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                <a class="nav-item nav-link  active" href="#">Counter : 4/10  <span class="sr-only">(current)</span></a>                
+                <a class="nav-item nav-link  active" href="#">Counter : {{numCorrect}}/{{numTotal}}  <span class="sr-only">(current)</span></a>                
                 
                 </div>
             </div>
         </nav>
     </div>
 </template>
+
+<script>
+export default {
+    props:[
+        'numCorrect',
+        'numTotal'
+    ]
+}
+</script>
